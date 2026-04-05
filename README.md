@@ -8,8 +8,6 @@
 ## Problem Statement
 YouTube creators upload 500+ hours of video every minute. A thumbnail is the #1 factor in whether someone clicks. This project builds a model that scores any thumbnail from 0–100 and gives actionable improvement suggestions — using only visual features.
 
-## Pipeline
-![Pipeline](notebooks/pipeline.png)
 
 1. **Data Collection** — YouTube Data API v3 (143 videos, 3 niches: Tech, Cooking, Gaming)
 2. **Feature Extraction** — Color stats, Face detection, Text detection, CLIP embeddings
