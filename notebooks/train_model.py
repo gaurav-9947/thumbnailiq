@@ -14,7 +14,8 @@ df = pd.read_csv(r'D:\thumbnailiq\data\features.csv')
 
 # Drop non-feature columns
 drop_cols = ['video_id', 'title', 'published_at', 'thumbnail_url', 
-             'thumbnail_path', 'ctr_proxy', 'category']
+             'thumbnail_path', 'ctr_proxy', 'category',
+             'ctr_proxy_log', 'view_count', 'like_count', 'days_old']
 drop_cols = [c for c in drop_cols if c in df.columns]
 
 X = df.drop(columns=drop_cols)
