@@ -53,23 +53,26 @@ YouTube creators upload 500+ hours of video every minute. A thumbnail is the #1 
 | Gradio | Demo web app |
 
 ## Project Structure
-
+```
 thumbnailiq/
+│
 ├── notebooks/
-│   ├── collect_metadata.py
-│   ├── download_thumbnails.py
-│   ├── compute_labels.py
-│   ├── extract_color.py
-│   ├── extract_faces.py
-│   ├── extract_text.py
-│   ├── extract_clip.py
-│   ├── merge_features.py
-│   ├── train_model.py
-│   ├── explain_model.py
-│   ├── evaluate_model.py
-│   └── app.py
-├── config.py
-└── requirements.txt
+│   ├── collect_metadata.py    ← YouTube API data collection
+│   ├── download_thumbnails.py ← Download thumbnail images
+│   ├── compute_labels.py      ← Calculate CTR proxy labels
+│   ├── extract_color.py       ← OpenCV color features
+│   ├── extract_faces.py       ← DeepFace emotion features
+│   ├── extract_text.py        ← pytesseract OCR features
+│   ├── extract_clip.py        ← CLIP semantic embeddings
+│   ├── merge_features.py      ← Combine all features
+│   ├── train_model.py         ← XGBoost training
+│   ├── explain_model.py       ← SHAP explainability
+│   ├── evaluate_model.py      ← Evaluation metrics
+│   └── app.py                 ← Gradio demo app
+│
+├── config.py                  ← API keys
+└── requirements.txt           ← Dependencies
+```
 
 ## How to Run Locally
 ```bash
