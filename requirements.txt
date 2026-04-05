@@ -1,0 +1,15 @@
+google-api-python-client
+requests
+opencv-python-headless
+deepface
+pytesseract
+transformers
+torch
+xgboost
+shap
+pandas
+scikit-learn
+matplotlib
+gradio
+joblib
+tf-keras
