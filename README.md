@@ -39,8 +39,8 @@ YouTube creators upload 500+ hours of video every minute. A thumbnail is the #1 
 - Data leakage was identified and fixed — view count and days were removed from features
 
 ## SHAP Feature Importance
-![SHAP Beeswarm](data/shap_beeswarm.png)
-![SHAP Bar](data/shap_bar.png)
+![SHAP Beeswarm](shap_beeswarm.png)
+![SHAP Bar](shap_bar.png)
 
 ## Tech Stack
 | Tool | Purpose |
